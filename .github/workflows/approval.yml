@@ -1,0 +1,12 @@
+name: Approval test
+
+on: pull_request
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Workflow approved"
